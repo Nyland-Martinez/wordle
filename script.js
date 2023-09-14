@@ -57,7 +57,7 @@ function intentar() {
   intentos--;
 
   if (intentos === 0) {
-    terminar(("<h1><span style='color: red;'>¡PERDISTE!🤩</span></h1>"));
+    terminar(("<h1><span style='color: red;'>¡PERDISTE!😑</span></h1>"));
     //console.log(¡PERDISTE!)
   }
  
