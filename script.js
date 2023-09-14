@@ -55,10 +55,15 @@ function intentar() {
   guessesContainer.appendChild(resultadoIntento);
 
   intentos--;
+  
+  if (intentos == 0){
+  terminar(("<h1><span style='color: red;'>¡PERDISTE!😑</span></h1>"));
+  
+}
 
-  if (intentos === 0) {
-    terminar(("<h1><span style='color: red;'>¡PERDISTE!😑</span></h1>"));
-    //console.log(¡PERDISTE!)
+  if ((intentos>0) && (intentos <6)) {
+    terminar(("<h1><span style='color: red;'>¡SIGUE INTENTANDO!😀</span></h1>"));
+    
   }
  
 }
@@ -78,8 +83,8 @@ function leerIntento() {
   function terminar(mensaje) {
     const INPUT = document.getElementById("guess-input");
     INPUT.disabled = true;
-    const boton = document.getElementById("guess-button");
-    boton.disabled = true;
+    const button = document.getElementById("guess-button");
+    button.disabled = true;
     let contenedor = document.getElementById('guesses');
     contenedor.innerHTML = mensaje;
   }
