@@ -60,11 +60,6 @@ function intentar() {
   terminar(("<h1><span style='color: red;'>¡PERDISTE!😑</span></h1>"));
   
 }
-
-  if ((intentos>0) && (intentos <6)) {
-    terminar(("<h1><span style='color: red;'>¡SIGUE INTENTANDO!😀</span></h1>"));
-    
-  }
  
 }
 
